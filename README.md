@@ -27,10 +27,10 @@ To use the code the following statements might be helpful:
 8)response.js: It contains the javascript code necessary to make the website responsive.(content fits on smaller screen)
 
 9)script.js: Contains the javascript code for the currency converter where the api is also connected.
-The api is from  https://www.exchangerate-api.com/ .
+The api is from  https://www.exchangerate-api.com/ . Make sure to create your own api key and add it to the code.
 
 10)weather.js : Contains the javascript code for the weather service, the api for weather is included here.
-The api is from https://openweathermap.org/api 
+The api is from https://openweathermap.org/api . Make sure to create your own api key and add it to the code.
 
 11)Github.com: I am not allowed to upload my .env file in github so I tried to create one in github itself.
 But there are some extra lines here which should not be included in your real.env file. Just include the part after "with:"
