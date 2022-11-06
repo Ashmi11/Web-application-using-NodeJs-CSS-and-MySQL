@@ -2,7 +2,7 @@
 It starts by declaring variables which store the specififc elememts that contain the id or class stated in querySelector 
 (these are looked for in the corresponding hbs file)*/ 
 
-const API_KEY = `4fcc780db6533d3849e4bc99943cf318`
+const API_KEY = `add your own api key here`
 const form = document.querySelector("form")
 const search = document.querySelector("#search")
 const weather = document.querySelector("#weather")
