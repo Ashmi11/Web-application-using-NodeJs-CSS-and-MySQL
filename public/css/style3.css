@@ -1,0 +1,129 @@
+/* This css file contains all the style code for the weather services*/
+
+
+.row {
+
+    border: 10px solid rgb(0, 90, 128);
+    border-width: 50px;
+    width: 430px;
+    padding-left: 0%;
+    display: flex;
+
+
+
+    margin-top: 50px;
+    font-size: 40px;
+    color: rgb(129, 20, 100);
+}
+
+.row2 {
+
+    border: 10px solid rgb(0, 90, 128);
+    border-width: 50px;
+    width: 430px;
+    padding-left: 0%;
+    display: flex;
+    
+
+
+    margin-top: 50px;
+    font-size: 40px;
+    color: rgb(129, 20, 100);
+}
+
+.row2 h4{
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#search {
+    font-size: 25px;
+    margin-top: 130px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.wt {
+    margin-top: 50px;
+    padding-left: 250px;
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(47, 47, 126);
+    text-shadow: 2px 2px 5px rgb(255, 0, 149);
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .wt {
+        font-size: 1.5rem;
+        margin-left: -250px;
+
+    }
+
+    .row {
+        border: 8px solid rgb(0, 90, 128);
+
+        display: flex;
+
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+
+    }
+
+    .row2 {
+
+         border: 4px solid rgb(0, 90, 128);
+         position: absolute;
+         top: 1000px;
+         left: 0px;
+         width: 200px;
+         height: 150px;
+         font-size: 20px;
+         text-align: center;
+
+    }
+
+    .row2 h4{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    
+
+    #search {
+        height: 100px;
+        font-size: 18px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 25px;
+        padding: 10px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 5px grey;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .textbox1 { 
+        width: 100px;
+        height:6px;
+        padding: 30px 5px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    
+
+               
+    
+
+}

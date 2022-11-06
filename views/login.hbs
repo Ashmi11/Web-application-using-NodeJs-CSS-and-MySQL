@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="https://kit.fontawesome.com/7d3cd42155.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo"><i class="fa-solid fa-globe"></i>TTT</a>
+
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+
+      <ul class="navbar__menu">
+
+        {{#if user}}
+
+        <li class="navbar__item">
+          <a href="/home" class="navbar__links" id="home-page"> Home</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="/profile" class="navbar__links" id="service-page"> Services</a>
+
+        </li>
+
+        <li class="navbar__item">
+          <a href="/auth/logout" class="navbar__links" id="logout-page"> Logout</a>
+
+
+        </li>
+
+
+
+
+
+        {{else}}
+
+        <li class="navbar__item">
+          <a href="/register" class="navbar__links"> Register</a>
+
+
+        </li>
+
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">Login</a>
+
+
+
+        </li>
+
+
+
+
+
+
+        {{/if}}
+
+
+
+
+
+      </ul>
+
+
+    </div>
+
+
+
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div class="container">
+    <div class="text">User Login</div>
+    {{#if msg}}
+    <div class="type">
+      <p class="{{msg_type}}">{{msg}}</p>
+
+    </div>
+
+    {{/if}}
+    <form action="/auth/login" method="POST">   <!-- the form-data is sent to the page specified in the action attribute  -->
+      <div class="data">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="data">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <div class="btn">
+        <button type="submit">login</button>
+      </div>
+      <div class="signup-link">
+        Not a member? <a href="/register">Signup now</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="response.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/style3.css" />
+  <link rel="stylesheet" href="css/style4.css" />
+  <link rel="stylesheet" href="css/style5.css" />
+  <script src="https://kit.fontawesome.com/7d3cd42155.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo"><i class="fa-solid fa-globe"></i>TTT</a>
+
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+
+      <ul class="navbar__menu">
+
+        {{#if user}}
+
+        <li class="navbar__item">
+          <a href="/home" class="navbar__links" id="home-page"> Home</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="/profile" class="navbar__links" id="service-page"> Services</a>
+
+        </li>
+
+        <li class="navbar__item">
+          <a href="/auth/logout" class="navbar__links" id="logout-page"> Logout</a>
+
+
+        </li>
+
+
+
+
+
+        {{else}}
+
+        <li class="navbar__item">
+          <a href="/register"> Register</a>
+
+
+        </li>
+
+        <li class="navbar__item">
+          <a href="/">Login</a>
+
+
+
+        </li>
+
+
+
+
+
+
+        {{/if}}
+
+
+
+
+
+      </ul>
+
+
+    </div>
+
+
+
+    </div>
+  </nav>
+
+
+  <section class="banner_section">
+    <div class="container">
+      <div class="banner_content">
+        <div class="title">
+
+          <span style="--i:1">S</span>
+          <span style="--i:2">E</span>
+          <span style="--i:3">R</span>
+          <span style="--i:4">V</span>
+          <span style="--i:5">I</span>
+          <span style="--i:6">C</span>
+          <span style="--i:7">E</span>
+          <span style="--i:8">S</span>
+
+
+        </div>
+
+        <div class="statement">
+          <h2> Take a look at the various services provided </h2>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wt">
+    <p> Weather Service </p>
+
+  </div>
+
+
+  <div class="outer">
+    <div class="row" style="text-align: center;">
+      <form action=" ">
+        <input class="textbox1" type="search" id="search" placeholder="Search by city name">
+
+      </form>
+    </div>
+    <div class="row2" id="weather">
+      <h4> Enter the name of a city in the search bar to know its current weather !!</h4>
+      
+    </div>
+
+   
+
+  
+
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action=" ">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input name="one" class="label" type="text" value="1">
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select>
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/np.png" alt="flag">
+              <select>
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <div class="mo">
+    <button class="btn4" data-modal-target="#modal"> BANGKOK </button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">BANGKOK</div>
+        <button data-close-button="#close-button" class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="pics" > <img class="pic1" src="/images/bangkok.jpg" alt="bangkok pic" > 
+        <h3 class="hr" > <br>APPROXIMATION OF MINIMUM BUDGET FOR ONE PERSON IN ONE DAY</h3>
+        <p   class="wh"> 
+          <br>Hotel:- 900-2000 baht
+          <br>Food:- 500-1000 baht
+          <br>Local transportation:- 150-300 baht 
+          <br>Total :- a minimum of 3000-3500 per day 
+
+        </p>
+        
+        </div>
+        <div class="writing"> 
+          <h1 class="hr" > POPULAR DESTINATIONS TO SEE AND THINGS TO DO:</h1>
+       <h2 class="wr"> <br> Admire the beauty of Grand palace , 
+        Shop at Damnoen Saduak Floating market ,
+        Discover Kaho san road ,
+        Walk around Lumpini park , 
+        Visit the national musuem , 
+        Shop at Terminal 21 , 
+        Experience strret food stalls , 
+        Take a river cruise , 
+        Stalk up on authentic souveniers at Chatuchak market, 
+        Step inside the temple of Emrald Buddha , 
+        Take a muay thai lesson , 
+        Explore China town , 
+        see a lot of temples </h2> 
+        
+        </div>
+       
+       
+       
+
+      </div>
+
+      
+    </div>
+    <div id="overlay"></div>
+
+    <div class="mo" id="i1">
+    <button class="btn4" data-modal-target="#modal1"> PHUKET </button>
+    <div class="modal1" id="modal1">
+      <div class="modal1-header">
+        <div class="title1">PHUKET</div>
+        <button data-close-button  class="close-button">&times;</button>
+      </div>
+      <div class="modal1-body">
+        <div class="pics" > <img class="pic1" src="/images/phuket.jpg" alt="bangkok pic" > 
+        <h3 class="hr" > <br>APPROXIMATION OF MINIMUM BUDGET FOR ONE PERSON IN ONE DAY</h3>
+        <p  class="wh"> 
+          <br>Hotel:- 1500-3000 baht
+          <br>Food:- 500-1000 baht
+          <br>Local transportation:- 150-300 baht 
+          <br>Total :- a minimum of 3000-5000 per day 
+
+        </p>
+        
+        </div>
+        <div class="writing"> 
+          <h1 class="hr"> POPULAR DESTINATIONS TO SEE AND THINGS TO DO:</h1>
+       <h2 class="wr"> <br> Take a Trip to Kata Noi Beach ,
+      Climb to Phuket's big Buddha,
+      Hang Out at Tiger Kingdom,
+      Take a Wander to Karon View Point ,
+      Walk Around Phuket Old Town ,
+      Watch the Monkeys at Monkey Hill,
+      Take a trip to Phi Phi islands,
+      Explore Phang Nga Bay,
+      Go around the many night markets
+
+
+
+       
+       
+       
+       </h2> 
+        
+        </div>
+       
+       
+       
+
+      </div>
+      <div id="overlay"></div>
+    </div>
+
+    <div class="mo2" id="i1">
+    <button class="btn4" data-modal-target="#modal2"> PATTAYA </button>
+    <div class="modal2" id="modal2">
+      <div class="modal2-header">
+        <div class="title2">PATTAYA</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal2-body">
+        <div class="pics" > <img class="pic1" src="/images/pattaya.jpg" alt="pattaya pic" > 
+        <h3 class="hr"> <br>APPROXIMATION OF MINIMUM BUDGET FOR ONE PERSON IN ONE DAY</h3>
+        <p  class="wh"> 
+          <br>Hotel:- 750-2000 baht
+          <br>Food:- 500-1000 baht
+          <br>Local transportation:- 300-500 baht 
+          <br>Total :- a minimum of 3500-4000 per day 
+
+        </p>
+        
+        </div>
+        <div class="writing"> 
+          <h1 class="hr"> POPULAR DESTINATIONS TO SEE AND THINGS TO DO:</h1>
+       <h2 class="wr"> <br> Party The Night Away In Walking Street,
+        Relax Yourself At Nong Nooch Tropical Botanical Garden ,
+        Become Part Of The Art At Art In Paradise ,
+        Climb The Hill At Wat Phra Khao Yai,
+        Go Ziplining At Flight Of The Gibbon,
+        See The Buddha Engraving At Khao Chi Chan,
+        Spend A Day At Koh Larn,
+        Pattaya Elephant Jungle Sanctuary
+
+        
+        
+        </h2> 
+        
+        </div>
+       
+       
+       
+
+      </div>
+      <div id="overlay"></div>
+
+  </div>
+
+  </div>
+
+  
+
+
+  <script src="weather.js"> </script>
+  <script src="country-list.js"></script>
+  <script src="script.js"></script>
+  <script src="modal.js"></script>
+  <script src="response.js"> </script>
+
+
+
+
+
+</body>
+
+</html>
