@@ -16,7 +16,7 @@ Installation and run instructions:
                                       b) Visual studio code- this is the editing software used where all the code will be added.
                                       (link to download:https://code.visualstudio.com/). To be able to code the following is to 
                                       be installed ( you can do so in the terminal using the following code) : 
-                                             1) To check if you have node js already installed type: "node -v". If any version number like                                                                               "v16.14.2" is returned then it means it is installed and you can move on.
+                                             1) To check if you have node js already installed type: "node -v". If any version number like                                                                           "v16.14.2" is returned then it means it is installed and you can move on.
                                                To get the package.json file type: "mpm init" in the terminal.
                                                  
                                              2)Few other dependencies to be installed :
@@ -48,7 +48,8 @@ Installation and run instructions:
                                               On this website go to the page for documentation and click on standard under main API. 
                                               This directs you to the page where you can see the api call, copy this url and paste it 
                                               in the javascript code. To get the api key : On the navbar click on Product and then on
-                                              Exchange rate api, the page that is displayed will ask for your email, where the key would be                                                                           sent.Copy this key from your email and paste it in the api call where it says "YOUR-API-KEY".
+                                              Exchange rate api, the page that is displayed will ask for your email, where the key would be sent.
+                                              Copy this key from your email and paste it in the api call where it says "YOUR-API-KEY".
                                               You can also change the base currency from USD to whatever you like.  
                                               
  2)  configure the system:  I have used a .env file  to store the variables for the properties of the database (host,user,password): Not only does it make the information more private and safe but also avoids the usage of the original values again and again as there are now more understandable placeholders (variables) assigned to those values , making it easier for the user to debug and even easier for others to comprehend the code.
