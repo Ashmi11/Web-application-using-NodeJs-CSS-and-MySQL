@@ -10,12 +10,16 @@ Installation and run instructions:
 
 1) Prerequisites for installing the system :- To be able to use the code all of the following should be on installed on the computer: 
                                       
-                                      a) node.js - This is used as the backend language. It also comes with npm which can futher be used to installl other modules.                                              (link to download :https://nodejs.org/en/).
+                                      a) node.js - This is used as the backend language. It also comes with npm which can futher be used to 
+                                      installl other modules.(link to download :https://nodejs.org/en/).
                                      
-                                      b) Visual studio code- this is the editing software used where all the code will be added. (link to download:                                                             https://code.visualstudio.com/). To be able to code the following is to be installed ( you can do so in the terminal                                                   using the following code) : 
-                                             1) To check if you have node js already installed type: "node -v". If any version number like                                                                               "v16.14.2" is returned then it means it is installed and you can move on. To get the package.json file type: "mpm                                                       init" in the terminal.
+                                      b) Visual studio code- this is the editing software used where all the code will be added.
+                                      (link to download:https://code.visualstudio.com/). To be able to code the following is to 
+                                      be installed ( you can do so in the terminal using the following code) : 
+                                             1) To check if you have node js already installed type: "node -v". If any version number like                                                                               "v16.14.2" is returned then it means it is installed and you can move on.
+                                               To get the package.json file type: "mpm init" in the terminal.
                                                  
-                                             3)Few other dependencies to be installed :
+                                             2)Few other dependencies to be installed :
                                                   * nodemon : npm install  -g nodemon 
                                                   * express: npm install express --save.
                                                   * hbs :  npm install hbs
@@ -25,9 +29,11 @@ Installation and run instructions:
                                                   * dotenv : npm install dotenv
                                                   * mysql: npm install mysql    (in order to be able to make a connection with the database)
                                        
-                                     c) XAMPP - This is used to setup the database .(link to download : https://www.apachefriends.org/)
+                                     c) XAMPP - This is used to setup the database .
+                                        (link to download : https://www.apachefriends.org/)
                                         On the XAMPP Control Panel :
-                                        start the modules "Apache" and "MySQL". After you start MySQL click on the admin action for it , which will direct you to                                               phpMyamin where the database can be created.
+                                        start the modules "Apache" and "MySQL". After you start MySQL click on the admin action for it ,
+                                        which will direct you to phpMyamin where the database can be created.
                                         
                                      d) API and API key for weather and currency converter: 
                                           1) The api for the weather service is from the website : Open weather map ( https://openweathermap.org/api).
@@ -39,7 +45,11 @@ Installation and run instructions:
                                              api call that you previously copied.
                                           
                                           2) The api for the currency converter is from the website : EchangeRate-API ( https://www.exchangerate-api.com/ )
-                                              On this website go to the page for documentation and click on standard under main API. This directs you to the page where                                               you can see the api call, copy this url and paste it in the javascript code. To get the api key : On the navbar click on                                               Product and then on Exchange rate api, the page that is displayed will ask for your email, where the key would be                                                       sent.Copy this key from your email and paste it in the api call where it says "YOUR-API-KEY". You can also change the                                                   base currency from USD to whatever you like.
+                                              On this website go to the page for documentation and click on standard under main API. 
+                                              This directs you to the page where you can see the api call, copy this url and paste it 
+                                              in the javascript code. To get the api key : On the navbar click on Product and then on
+                                              Exchange rate api, the page that is displayed will ask for your email, where the key would be                                                                           sent.Copy this key from your email and paste it in the api call where it says "YOUR-API-KEY".
+                                              You can also change the base currency from USD to whatever you like.  
                                               
  2)  configure the system:  I have used a .env file  to store the variables for the properties of the database (host,user,password): Not only does it make the information more private and safe but also avoids the usage of the original values again and again as there are now more understandable placeholders (variables) assigned to those values , making it easier for the user to debug and even easier for others to comprehend the code.
 
