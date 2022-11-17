@@ -16,8 +16,9 @@ Installation and run instructions:
                                       b) Visual studio code- this is the editing software used where all the code will be added.
                                       (link to download:https://code.visualstudio.com/). To be able to code the following is to 
                                       be installed ( you can do so in the terminal using the following code) : 
-                                             1) To check if you have node js already installed type: "node -v". If any version number like                                                                           "v16.14.2" is returned then it means it is installed and you can move on.
-                                               To get the package.json file type: "mpm init" in the terminal.
+                                             1) To check if you have node js already installed type: "node -v". If any version number like 
+                                             "v16.14.2" is returned then it means it is installed and you can move on.
+                                              To get the package.json file type: "mpm init" in the terminal.
                                                  
                                              2)Few other dependencies to be installed :
                                                   * nodemon : npm install  -g nodemon 
